@@ -18,7 +18,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="bg-purple-100 text-white min-h-screen flex flex-col items-center p-10 gap-10">
+    <main className="bg-zinc-200 text-white min-h-screen flex flex-col items-center p-8 gap-10">
       <header></header>
       <section className="grid grid-cols-4 gap-4 w-full max-w-screen-md text-black">
         {products.map((product, index) => {
