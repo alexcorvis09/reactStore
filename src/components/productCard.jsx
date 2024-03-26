@@ -15,11 +15,13 @@ export default function ProductCard(props) {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg p-4 size-[260px]">
+    <div className="bg-white rounded-lg p-4 size-[260px] content-center">
       <img className="w-fit h-52" src={props.thumbnail} alt={props.title} />
-      <p className="text-black font-bold">{props.title}</p>
+      <p className="text-black font-bold p-1">{props.title}</p>
       <p>{props.price}</p>
-      <button className="bg-zinc-200 p-2 rounded-md">Add to Cart</button>
+      <button className="bg-zinc-200 p-2 rounded-md hover:bg-zinc-400">
+        Add to Cart
+      </button>
     </div>
   );
 }

@@ -40,13 +40,13 @@ export default function App() {
 
           <div className="flex row-end-2 justify-between items-center">
             <a
-              className=" text-black p-3 border-2 border-white hover:bg-blue-600/40 hover:border-2 hover: border-blue-600/40 rounded-lg place-content-center"
+              className=" text-black p-3 border-2 border-white hover:bg-zinc-600/40 hover:border-2 hover: border-blue-600/40 rounded-lg place-content-center"
               href="/login"
             >
               Log In
             </a>
             <a
-              className="p-3 text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white"
+              className="p-3 text-zinc-600 border-2 border-zinc-400 rounded-lg hover:bg-zinc-400 hover:text-white"
               href="/"
             >
               Create Account

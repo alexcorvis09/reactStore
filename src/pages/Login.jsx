@@ -38,7 +38,7 @@ export default function Login() {
 
   return (
     <div className="bg-gray-200 min-h-screen p-10 flex justify-center">
-      <div className="bg-pink-200 size-60 rounded p-3">
+      <div className="bg-pink-200 size-96 rounded p-16">
         <p className="flex justify-center">Welcome!</p>
         <form className=" grid grid-rows-2 gap-3 p-5" onSubmit={handleSubmit}>
           <input

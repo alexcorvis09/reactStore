@@ -59,16 +59,16 @@ export default function Login() {
   }
 
   return (
-    <div className="bg-gray-200 min-h-screen p-10 flex justify-center">
-      <div className="bg-pink-200 size-60 rounded p-3">
+    <div className="bg-gray-200 min-h-screen p-10 flex justify-center items-center">
+      <div className="bg-white size-96 rounded p-2">
         <p className="flex justify-center">Welcome!</p>
         <form
           className=" grid grid-rows-2 gap-3 p-5"
           onSubmit={handleSubmit(onSubmit)}
         >
           <input
-            className={clsx("p1 rounded text-black", {
-              "border-2 border-pink-600": errors.username,
+            className={clsx("p1 rounded text-black border-2 border-gray-300", {
+              "border-2 border-red-500": errors.username,
             })}
             type="text"
             name="username"
@@ -80,10 +80,10 @@ export default function Login() {
             })}
           />
           {errors.username && (
-            <p className=" text-xs text-red-700">{errors.username.message}</p>
+            <p className=" text-xs text-red-500">{errors.username.message}</p>
           )}
           <input
-            className="rounded"
+            className="rounded border-2 border-gray-300"
             type="password"
             name="password"
             required
@@ -92,12 +92,12 @@ export default function Login() {
           />
           <button
             type="submit"
-            className="bg-pink-500 rounded flex justify-center  bottom-0"
+            className="text-white bg-blue-600 rounded flex justify-center bottom-0"
           >
             Sign In
           </button>
           {
-            errors.root && <p className="text-red-700">{errors.root.message}</p>
+            errors.root && <p className="text-red-500">{errors.root.message}</p>
             // <p className={clsx({ hidden: !error }, "text-pink-800")}>{error}</p>
           }
         </form>
