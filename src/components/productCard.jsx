@@ -15,7 +15,7 @@ export default function ProductCard(props) {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg p-3 size-80">
+    <div className="bg-white rounded-lg p-4 size-[260px]">
       <img className="w-fit h-52" src={props.thumbnail} alt={props.title} />
       <p className="text-black font-bold">{props.title}</p>
       <p>{props.price}</p>
